@@ -1,9 +1,19 @@
 <?php
-    $ingredientes = ['Açucar', 'Farinha de trigo', 'ovo',
-        'leite', 'fermento em pó'
+    $userOne = [
+        'name' => 'Jhon',
+        'age' => 20
     ];
 
-    for($i = 0; $i < sizeof($ingredientes); $i++){
-        echo "-> ".$ingredientes[$i]."<br>";
+    $userTwo = [
+        'name' => 'Jhon',
+        'age' => '20'
+    ];
+
+    if($userOne === $userTwo){
+        var_dump($userOne === $userTwo);
+        echo "<hr />E verdadeiro!";
+    }else{
+        var_dump($userOne === $userTwo);
+        echo "<hr />E falso!";
     }
 ?>
