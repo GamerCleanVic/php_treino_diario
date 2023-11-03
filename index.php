@@ -1,8 +1,17 @@
 <?php
+    function ingredientesBolo(){
+        $itens = [
+            'Trigo',
+            'Ovo',
+            'Açucar'
+        ];
+        foreach($itens as $itemDaVez){
+            $aux1 = $itemDaVez;
 
-    $arrayTeste = [
-        'sobrenome' => 'Silva'
-    ];
-    echo $arrayTeste["name"] ?? $arrayTeste['age']
-        ?? 'Teste';
+            if($aux1 === 'Ovo'){
+                echo $aux1;
+            }
+        }
+    }
+    ingredientesBolo();
 ?>
