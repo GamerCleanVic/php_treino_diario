@@ -1,17 +1,9 @@
 <?php
-    function ingredientesBolo(){
-        $itens = [
-            'Trigo',
-            'Ovo',
-            'Açucar'
-        ];
-        foreach($itens as $itemDaVez){
-            $aux1 = $itemDaVez;
-
-            if($aux1 === 'Ovo'){
-                echo $aux1;
-            }
-        }
+    class Operacoes{
+          public function calc($x, $y){
+               return $x + $y;
+          }
     }
-    ingredientesBolo();
-?>
+
+$operaFora = new Operacoes();
+echo $operaFora->calc(3, 4);
