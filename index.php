@@ -1,7 +1,10 @@
 <?php
      class Matematica{
-          public static function somar($x, $y){
-               return $x + $y;
+          public static string $operation = 'Soma = ';
+          public static function somar($x , $y){
+               return ($x + $y);
           }
+
+
      }
-     echo "Soma = ".Matematica::somar(4, 3);
+     echo Matematica::$operation.Matematica::somar(4, 3);
