@@ -2,7 +2,7 @@
      class Matematica{
           public static string $operation = 'Soma = ';
           public static function somar($x , $y){
-               return ($x + $y);
+               return $x + $y;
           }
 
 
