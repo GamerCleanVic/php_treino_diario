@@ -1,7 +1,7 @@
 <?php
-namespace classes\matematica;
+namespace matematica;
 
-class Contar{
+class Basico{
     public function somar($x, $y){
         return $x + $y;
     }
